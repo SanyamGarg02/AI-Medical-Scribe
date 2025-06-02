@@ -2,9 +2,13 @@ import openai
 import streamlit as st
 import speech_recognition as sr
 import wave
+import os
+
+from dotenv import load_dotenv
+load_dotenv()
+
 # OpenAI API Key
-OPENAI_API_KEY = "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"
-openai.api_key = OPENAI_API_KEY
+openai.api_key = os.getenv("OPENAI_API_KEY")
 def record_audio(filename="input.wav"):
     """Record audio and save it to a file."""
     recognizer = sr.Recognizer()

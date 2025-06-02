@@ -4,5 +4,5 @@ services:
     env: python
     buildCommand: "./setup.sh && pip install -r requirements.txt"
     startCommand: "streamlit run main.py"
-    repo: https://github.com/YOUR_USERNAME/YOUR_REPO_NAME
+    repo: https://github.com/SanyamGarg02/AI-Medical-Scribe
     branch: main
